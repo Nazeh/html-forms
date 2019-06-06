@@ -31,6 +31,44 @@
         </header>
         <main>
             <div>
+                <form action="#" method="POST">
+                    <fieldset>
+
+                        <label for="email">
+                            Email address
+                        </label>
+                        <div>
+                            <input name="email" type="email" placeholder="You'll verify this later" maxlength="100"
+                                aria-required="true" required="required" autocomplete="off">
+                        </div>
+                        
+
+                        <label for="phone">
+                            Phone <span>(recomended)</span>
+                        </label>
+                        <div>
+                            <input name="phone" type="tel" placeholder="Helps with lost passwords and security"
+                                maxlength="30">
+                            <span id="std">Standard call, messaging or data rates may apply.</span>
+                        </div>
+
+
+                        <label for="password">
+                            Password
+                        </label>
+                        <div>
+                            <input name="password" type="password" placeholder="Don't reuse an old password" maxlength="50"
+                                aria-required="true" required="required">
+                            <span class="lock-left-grey"></span>
+                        </div>
+
+                    </fieldset>
+                    <button type="submit" name="SignUp" text="Create account">
+                        <span class="white-lock"></span>
+                        <span>Create account</span>
+                    </button>
+                    <input type="submit">
+                </form>
 
             </div>
         </main>

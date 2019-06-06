@@ -68,6 +68,59 @@ main div {
     background-color: azure;
 }
 
+.lock-left-grey{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/lock-left-grey@3x.png)0 50%/21px 21px no-repeat;
+    width: 33px;
+}
+.white-lock{
+    background-image: url(https://accounts.intuit.com/images/v2/icon-whitelock@3x.png?v=1.50.1.03);
+}
+
+fieldset{
+    justify-content: center;
+    
+}
+fieldset div{
+    display: block;
+    margin: 0;
+    
+
+}
+fieldset label{
+    box-sizing: border-box;
+    color: rgb(64, 64, 64);
+    display: block;
+    font-family: AvenirNext, Avenir, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0px;
+    outline-color: rgb(64,64,64);
+    outline-style: none;
+    padding-bottom:6px;
+    padding: 0px;
+    text-align: left;
+
+
+}
+fieldset div input{
+    background-color: rgb(255,255,255);
+    border-bottom-color: rgb(193,197,200);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-style: solid;
+    padding: 8px 14px;
+    box-shadow: 0;
+}
+#std{
+    display: flex;
+    color: gray;
+}
+
+.grid label input{
+    display: inline;
+    padding: 8px 12px;
+}
 
 footer {
     color: rgb(80, 80, 80);
