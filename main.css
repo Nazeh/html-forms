@@ -43,6 +43,39 @@ header div div {
     color: rgb(83, 83, 83);
 }
 
+
+/* LOGO ICON */
+
+
+.logo-area header ul{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.remove-bullets{
+    list-style: none;
+    margin: 0 9px 0 0;
+}
+ .logo-area header ul li{
+    color: gray;
+    
+ }
+
+.mint-favicon{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/mint-favicon.svg)no-repeat;
+    margin: 0 4px 0 0;
+}
+
+.quickbooks-favicon{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/quickbooks-favicon@2x.svg)no-repeat;
+    margin: 0 4px 0 0;
+}
+.turbotax-favicon{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/tt-favicon@2x.svg)no-repeat;
+    margin: 0 4px 0 0;   
+}
+
+
 button {
     background-color: #0077C5;
     height: 34px;
