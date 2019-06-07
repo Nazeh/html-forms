@@ -108,8 +108,12 @@ input{
 
 form button{
     width: 100%;
+    height: 44px;
     padding: 0;
     margin: 0;
+    border-top: none;
+    border
+    border-bottom: 1px solid;
 }
 
 
@@ -131,9 +135,7 @@ form button{
     width: 33px;
 }
 
-.white-lock {
-    background-image: url(https://accounts.intuit.com/images/v2/icon-whitelock@3x.png?v=1.50.1.03);
-}
+
 
 fieldset {
     justify-content: center;
