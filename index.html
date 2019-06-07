@@ -89,13 +89,20 @@
                                 <p>Phone (recomended)</p>
                                 <input type="email" placeholder="Helps with lost passwords and security"
                                     required="required">
+                                <span id="std">Standard call, messaging or data rates may apply.</span>
                             </label>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset id="password-fieldset">
                             <label>
-                                <p>Email address</p>
-                                <input type="email" placeholder="You'll verify this later" required="required">
+                                <p>Password</p>
+                                <div class="password-field">
+                                    <input id="password-input"type="password" placeholder="Don't reuse an old password" maxlength="50"
+                                        required="required">
+                                    <img id="unlocked-lock"
+                                        src="https://accounts.intuit.com/IUS-Plugins/v2/images/lock-left-grey@3x.png">
+                                </div>
+
                             </label>
                         </fieldset>
 

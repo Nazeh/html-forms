@@ -112,10 +112,51 @@ form button{
     padding: 0;
     margin: 0;
     border-top: none;
-    border
-    border-bottom: 1px solid;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+#unlocked-lock{
+    position: absolute;
+    height:20px;
+    padding: 0 20px 0 20px;
+  
+    align-self: center;
+    
 }
 
+#password-fieldset{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+
+}
+
+.password-field{
+    display: flex;
+    position: relative;
+    align-self: auto;
+    
+     
+    justify-content: flex-end;
+    
+}
+
+#password-input{
+    width: 314px;
+    height: 16px;
+    padding-left: 10px;
+    padding-right: 0;  
+    margin: 0;
+    border: 1px solid;
+    border-color: rgb(193, 197, 200);
+    border-radius: 3px;
+    color: rgb(187, 187, 187);
+    
+}
 
 .form-area div{
     padding: 0 10px;
@@ -127,14 +168,6 @@ form button{
     font-style: italic;
     
 }
-
-
-
-.lock-left-grey {
-    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/lock-left-grey@3x.png)0 50%/21px 21px no-repeat;
-    width: 33px;
-}
-
 
 
 fieldset {
@@ -180,6 +213,10 @@ fieldset div input {
 #std {
     display: flex;
     color: gray;
+    font-size: 10px;
+    color: #444;
+    padding: 0;
+    
 }
 
 .grid label input {
