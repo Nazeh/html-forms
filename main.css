@@ -28,7 +28,7 @@ header {
     display: none;
 }
 
-header > div {
+header>div {
     justify-self: right;
     height: 36px;
     width: 296px;
@@ -60,18 +60,18 @@ button {
     justify-content: center;
 }
 
-button svg{
+button svg {
     fill: white;
     height: 15px;
     margin-right: 5px;
 }
 
-button p{
+button p {
     margin: 0;
     font-size: 14px;
 }
 
-form button p{
+form button p {
     font-size: 15.75px;
 }
 
@@ -83,74 +83,109 @@ main {
     display: grid;
 }
 
-main section{
+main section {
     grid-template-rows: auto auto 46px;
 }
- 
+
 /* LOGO area */
 
-.logo-area{
+.logo-area {
     display: grid;
     grid-template-rows: auto auto;
 }
 
-.logo{
+.logo {
     width: 118px;
     height: 35px;
     background-image: url(https://accounts.intuit.com/images/v2/ecosystem_logos_new.png);
-    margin:20px auto;
+    margin: 20px auto;
+    animation: logo-fade-in 1.5s;
 }
 
-.icons{
+.icons {
     margin-bottom: 19px;
     height: 23px;
     display: flex;
     justify-content: center;
 }
 
-.favcoin{
+.favicoin {
     width: 23px;
     height: 23px;
     margin-right: 4px;
-}
-.favtext{
-    height: 22px;
-    margin-right: 9px;
+    animation: icon-fade-in 1.5s;
 }
 
-.mint-favicon{
+.favtext {
+    height: 22px;
+    margin-right: 9px;
+    animation: icon-fade-in 1.5s;
+}
+
+.mint-favicon {
     background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/mint-favicon.svg)no-repeat;
 }
 
-.quickbooks-favicon{
+.quickbooks-favicon {
     background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/quickbooks-favicon@2x.svg)no-repeat;
 }
-.turbotax-favicon{
-    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/tt-favicon@2x.svg)no-repeat;   
+
+.turbotax-favicon {
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/tt-favicon@2x.svg)no-repeat;
 }
 
-.mint{
-    width:37px;
+.mint {
+    width: 37px;
     margin-top: 3px;
     background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/mint-text.svg)no-repeat;
 }
 
-.quickbooks{
+.quickbooks {
     margin-top: 1px;
-    width:99px;
+    width: 99px;
     background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/quick-books-text.svg)no-repeat;
 }
-.turbotax{
+
+.turbotax {
     margin-top: 1px;
     width: 74px;
-    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/turbo-tax-text.svg)no-repeat;   
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/turbo-tax-text.svg)no-repeat;
 }
 
+
+
+/* Animation */
+@keyframes logo-fade-in {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    50% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes icon-fade-in {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        opacity: 100;
+    }
+}
 
 
 
 /* forma area */
-.form-area{
+.form-area {
     padding: 30px;
     background-color: white;
     border: 1px solid;
@@ -161,61 +196,62 @@ main section{
 }
 
 
-.form-header{
+.form-header {
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     display: grid;
     color: rgb(76, 76, 76);
 }
 
-.form-header p{
+.form-header p {
     margin: 0;
     font-size: 24px
 }
 
-.form-header span{
+.form-header span {
     padding-top: 20px;
     font-size: 14px;
 }
 
-.form-header a{
+.form-header a {
     font-size: 12px;
 }
 
-#already{
+#already {
     display: inline;
 }
 
 /* form */
 
 
-form{
+form {
     display: grid;
     grid-gap: 30px;
 }
-fieldset{
+
+fieldset {
     padding: 0;
     margin: 0;
     border: none;
     display: grid;
 }
 
-label{
+label {
     display: grid;
     grid-gap: 10px;
 }
 
-label p{
-    margin:0;
+label p {
+    margin: 0;
     font-size: 14px;
 }
 
-label span{
+label span {
     font-size: 10px;
     color: grey;
 }
 
-fieldset label input{
+fieldset label input {
     padding: 0 8px;
     height: 38px;
     border: 1px solid;
@@ -223,12 +259,12 @@ fieldset label input{
     border-radius: 3px;
 }
 
-fieldset label input:focus{
-  box-shadow:0 0 5px rgba(81, 203, 238, 1);
-  border: 1px solid rgba(81, 203, 238, 1);
+fieldset label input:focus {
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
 }
 
-fieldset label input::placeholder{
+fieldset label input::placeholder {
     font-size: 14px;
     color: rgb(185, 185, 185);
 }
@@ -247,36 +283,38 @@ label div img {
 }
 
 
-.create-acc{
+.create-acc {
     width: 100%;
     padding: 0;
     margin: 0;
     margin-bottom: 40px;
     height: 44px;
     border: none;
-    box-shadow: rgba(0,0,0,0.7) 0 1px;
+    box-shadow: rgba(0, 0, 0, 0.7) 0 1px;
 }
 
 
-.terms, .captcha{
+.terms,
+.captcha {
     padding: 0 10px;
     color: rgb(122, 122, 122);
     text-align: center;
     font-size: 12px;
     line-height: 1.5;
-    font-style: italic; 
-    align-self: center; 
+    font-style: italic;
+    align-self: center;
     line-height: 18px;
 }
 
-.captcha{
-    background-color: rgb(236, 238, 241);;
+.captcha {
+    background-color: rgb(236, 238, 241);
+    ;
     align-self: stretch;
     padding: 16px;
     border: 1px solid;
     border-top: none;
     border-color: rgb(199, 199, 199);
-    font-style: normal; 
+    font-style: normal;
     font-size: 10px;
 }
 
@@ -308,7 +346,7 @@ footer a {
         grid-column: 2;
     }
 
- 
+
 }
 
 @media screen and (min-width: 765px) {
@@ -320,7 +358,7 @@ footer a {
         grid-row: auto;
     }
 
-    #already{
+    #already {
         display: none;
     }
 }
