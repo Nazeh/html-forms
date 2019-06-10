@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <section>
+    <div class="site">
         <header>
             <div>
                 <div>
@@ -34,16 +34,16 @@
                                             M331.886,196.563h-84.072h-8.895h-84.072v-44.388c0-48.905,39.744-89.342,88.519-89.342c48.775,0,88.521,40.437,88.521,89.342
                                            V196.563z" />
                     </svg>
-                    <p>
+                    <span>
                         Sign In
-                    </p>
+                    </span>
                 </button>
 
             </div>
         </header>
-        <main>
+        <div class="middle">
 
-            <section>
+            <div class="section">
 
                 <div class="logo-area">
 
@@ -84,40 +84,34 @@
                     <form action="#" method="POST">
 
                         <fieldset>
-                            <label>
-                                <p>Email address</p>
-                                <div>
-                                    <input type="email" placeholder="You'll verify this later" required="required">
-                                </div>
+                            <label for="email">Email address</label>
 
-                            </label>
+                            <div>
+                                <input id="email" type="email" placeholder="You'll verify this later"
+                                    required="required">
+                            </div>
                         </fieldset>
 
                         <fieldset>
-                            <label>
-                                <p>Phone (recomended)</p>
-                                <div>
-                                    <input type="tel" placeholder="Helps with lost passwords and security"
-                                        required="required">
-                                </div>
+                            <label for="phone">Phone (recomended)</label>
+                            <div>
+                                <input id="phone" type="tel" placeholder="Helps with lost passwords and security"
+                                    required="required">
+                            </div>
 
-                                <span>Standard call, messaging or data rates may apply.
-                                </span>
-                            </label>
+                            <span>Standard call, messaging or data rates may apply.
+                            </span>
                         </fieldset>
 
                         <fieldset>
-                            <label>
-                                <p>Password</p>
-                                <div class="input-container">
-                                    <input type="password" placeholder="Dont reuse and old password"
-                                        required="required">
-                                    <img id="lock-open"
-                                        src="https://accounts.intuit.com/IUS-Plugins/v2/images/lock-left-grey@3x.png"
-                                        alt="">
-                                </div>
-
-                            </label>
+                            <label for="password">Password</label>
+                            <div class="input-container">
+                                <input id="password" type="password" placeholder="Dont reuse and old password"
+                                    required="required">
+                                <img id="lock-open"
+                                    src="https://accounts.intuit.com/IUS-Plugins/v2/images/lock-left-grey@3x.png"
+                                    alt="">
+                            </div>
                         </fieldset>
 
                         <button type="submit" class="create-acc">
@@ -131,9 +125,9 @@
                                                     M331.886,196.563h-84.072h-8.895h-84.072v-44.388c0-48.905,39.744-89.342,88.519-89.342c48.775,0,88.521,40.437,88.521,89.342
                                                    V196.563z" />
                             </svg>
-                            <p>
+                            <span>
                                 Create Account
-                            </p>
+                            </span>
                         </button>
                     </form>
 
@@ -154,10 +148,10 @@
 
 
 
-            </section>
+            </div>
 
 
-        </main>
+        </div>
         <footer>
             <div>
                 <a href="#">Legal</a>
@@ -170,7 +164,7 @@
             <span>Terms and conditions, features, support, pricing, and service options subject to change without
                 notice.</span>
         </footer>
-    </section>
+    </div>
 
 </body>
 
