@@ -87,8 +87,9 @@
                         <fieldset>
                             <label>
                                 <p>Email address</p>
-
-                                <input type="email" placeholder="You'll verify this later" required="required">
+                                <div>
+                                    <input type="email" placeholder="You'll verify this later" required="required">
+                                </div>
 
                             </label>
                         </fieldset>
@@ -96,8 +97,11 @@
                         <fieldset>
                             <label>
                                 <p>Phone (recomended)</p>
-                                <input type="tel" placeholder="Helps with lost passwords and security"
-                                    required="required">
+                                <div>
+                                    <input type="tel" placeholder="Helps with lost passwords and security"
+                                        required="required">
+                                </div>
+
                                 <span>Standard call, messaging or data rates may apply.
                                 </span>
                             </label>
@@ -106,7 +110,7 @@
                         <fieldset>
                             <label>
                                 <p>Password</p>
-                                <div>
+                                <div class="input-container">
                                     <input type="password" placeholder="Dont reuse and old password"
                                         required="required">
                                     <img id="lock-open"

@@ -204,8 +204,6 @@ fieldset label input{
 
 fieldset label input:focus{
   box-shadow:0 0 5px rgba(81, 203, 238, 1);
-
-
   border: 1px solid rgba(81, 203, 238, 1);
 }
 
@@ -214,17 +212,15 @@ fieldset label input::placeholder{
     color: rgb(185, 185, 185);
 }
 
-fieldset label div{
-
+label div {
+    position: relative;
+    width: 100%;
     display: grid;
-    grid-template-columns: auto 0px;
-    
 }
 
-#lock-open{
+label div img {
     position: absolute;
-    justify-self: right;
-    min-width: 20px;
+    right: 0;
     height: 20px;
     padding: 10px;
 }
