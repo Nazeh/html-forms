@@ -45,38 +45,6 @@ header div div {
 }
 
 
-/* LOGO ICON */
-
-
-.logo-area header ul{
-    margin-top: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-}
-.remove-bullets{
-    list-style: none;
-    margin: 0 9px 0 0;
-}
- .logo-area header ul li{
-    color: gray;
-    
- }
-
-.mint-favicon{
-    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/mint-favicon.svg)no-repeat;
-    margin: 0 4px 0 0;
-}
-
-.quickbooks-favicon{
-    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/quickbooks-favicon@2x.svg)no-repeat;
-    margin: 0 4px 0 0;
-}
-.turbotax-favicon{
-    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/tt-favicon@2x.svg)no-repeat;
-    margin: 0 4px 0 0;   
-}
-
-
 button {
     display: flex;
     background-color: #0077C5;
@@ -113,18 +81,71 @@ form button p{
 main {
     grid-row: 1/ 3;
     display: grid;
-    margin-top: 40px;
 }
 
 main section{
     grid-template-rows: auto auto 46px;
 }
-
-/* logo area */
+ 
+/* LOGO area */
 
 .logo-area{
-    
+    display: grid;
+    grid-template-rows: auto auto;
 }
+
+.logo{
+    width: 118px;
+    height: 35px;
+    background-image: url(https://accounts.intuit.com/images/v2/ecosystem_logos_new.png);
+    margin:20px auto;
+}
+
+.icons{
+    margin-bottom: 19px;
+    height: 23px;
+    display: flex;
+    justify-content: center;
+}
+
+.favcoin{
+    width: 23px;
+    height: 23px;
+    margin-right: 4px;
+}
+.favtext{
+    height: 22px;
+    margin-right: 9px;
+}
+
+.mint-favicon{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/mint-favicon.svg)no-repeat;
+}
+
+.quickbooks-favicon{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/quickbooks-favicon@2x.svg)no-repeat;
+}
+.turbotax-favicon{
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/tt-favicon@2x.svg)no-repeat;   
+}
+
+.mint{
+    width:37px;
+    margin-top: 3px;
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/mint-text.svg)no-repeat;
+}
+
+.quickbooks{
+    margin-top: 1px;
+    width:99px;
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/quick-books-text.svg)no-repeat;
+}
+.turbotax{
+    margin-top: 1px;
+    width: 74px;
+    background: url(https://accounts.intuit.com/IUS-Plugins/v2/images/turbo-tax-text.svg)no-repeat;   
+}
+
 
 
 
@@ -233,6 +254,7 @@ label div img {
     margin-bottom: 40px;
     height: 44px;
     border: none;
+    box-shadow: rgba(0,0,0,0.7) 0 1px;
 }
 
 
@@ -244,6 +266,7 @@ label div img {
     line-height: 1.5;
     font-style: italic; 
     align-self: center; 
+    line-height: 18px;
 }
 
 .captcha{
